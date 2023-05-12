@@ -1,0 +1,21 @@
+.my_movies {
+  position: relative;
+}
+
+.my_movies > svg {
+  font-size: 24px;
+}
+
+.my_movies > p {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background-color: rgb(232, 232, 146);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(49, 49, 49);
+}
