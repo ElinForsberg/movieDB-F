@@ -1,5 +1,10 @@
 .movie_card {
   position: relative;
+  width: 350px;
+}
+
+.movie_card img {
+  width: 100%;
 }
 
 .movie_card_info {

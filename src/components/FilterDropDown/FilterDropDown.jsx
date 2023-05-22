@@ -1,6 +1,10 @@
-function FilterDropDown() {
+/* eslint-disable react/prop-types */
+function FilterDropDown({ filter, setFilter }) {
   return (
-    <select>
+    <select
+      value={filter}
+      onChange={(e) => setFilter({ filter: e.target.value })}
+    >
       <option value='popular'>Popular</option>
       <option value='top_rated'>Top Rated</option>
       <option value='upcoming'>Upcoming</option>
