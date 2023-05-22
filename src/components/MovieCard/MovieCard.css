@@ -1,0 +1,15 @@
+.movie_card {
+  position: relative;
+}
+
+.movie_card_info {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 20%, rgb(0, 0, 0));
+  color: rgb(232, 232, 232);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

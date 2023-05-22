@@ -1,11 +1,20 @@
 import "./NavLinks.css";
+import { NavLink } from "react-router-dom";
 
 function NavLinks() {
   return (
     <ul>
-      <li>Movies</li>
-      <li>About</li>
-      <li>Contact</li>
+      <NavLink to='/'>
+        <li>Movies</li>
+      </NavLink>
+
+      <NavLink to='/about'>
+        <li>About</li>
+      </NavLink>
+
+      <NavLink to='/contact'>
+        <li>Contact</li>
+      </NavLink>
     </ul>
   );
 }

@@ -1,0 +1,26 @@
+.movie_list {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie_list .movie_list_filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.movie_list > h2 {
+  margin: 3em;
+  text-transform: capitalize;
+}
+
+.movie_grid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

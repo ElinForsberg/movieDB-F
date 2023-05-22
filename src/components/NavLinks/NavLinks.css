@@ -5,3 +5,7 @@ ul {
   margin-right: 0.8rem;
   text-transform: uppercase;
 }
+
+.active {
+  border-bottom: 2px solid rgb(232, 232, 146);
+}
