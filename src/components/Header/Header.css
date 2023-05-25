@@ -1,10 +1,11 @@
 header {
   height: 4rem;
   background-color: rgb(29, 30, 43);
+  color: rgb(234, 234, 234);
+  padding: 0 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5rem;
 }
 
 header h1 {
@@ -13,7 +14,6 @@ header h1 {
 
 header h1 > span {
   font-weight: 400;
-  color: rgb(232, 232, 146);
 }
 
 header > div {

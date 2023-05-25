@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer>
-      <p>&copy; MovieDB Copyright 2023</p>
+      <p>&copy; Copyright MovieDB 2023</p>
     </footer>
   );
 }

@@ -1,12 +1,17 @@
+import { useState } from "react";
+import { FiEye } from "react-icons/fi";
+import MovieDrawer from "../MovieDrawer/MovieDrawer";
+
 import "./MyMovies.css";
 
-import { FiEye } from "react-icons/fi";
-
 function MyMovies() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className='my_movies'>
+    <div className='my_movies' onClick={() => setOpen(true)}>
       <p>0</p>
       <FiEye />
+      <MovieDrawer open={open} setOpen={setOpen} />
     </div>
   );
 }

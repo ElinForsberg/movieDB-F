@@ -1,5 +1,12 @@
+/* eslint-disable react/prop-types */
+import Button from "@mui/material/Button";
+
 function MarkAsSeenBtn() {
-  return <button>Seen it</button>;
+  return (
+    <Button variant='outlined' color='inherit' onClick={() => {}}>
+      Add
+    </Button>
+  );
 }
 
 export default MarkAsSeenBtn;

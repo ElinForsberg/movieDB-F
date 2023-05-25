@@ -1,24 +1,25 @@
+import { useState, useEffect } from "react";
 import MarkAsSeenBtn from "../MarkAsSeenBtn/MarkAsSeenBtn";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { FaImdb } from "react-icons/fa";
+
+import "./MovieDetails.css";
 
 function MovieDetails() {
-  const [movie, setMovie] = useState();
-
+  const [movie, setMovie] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchMovie = async () => {
-      const res = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=${
-          import.meta.env.VITE_API_KEY
-        }`
-      );
-      const data = await res.json();
-
-      setMovie(data);
-    };
-    fetchMovie();
+    fetch(
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${
+        import.meta.env.VITE_API_KEY
+      }`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setMovie(data);
+      });
   }, []);
 
   return movie ? (
@@ -48,7 +49,7 @@ function MovieDetails() {
           </div>
 
           <div className='rating_info'>
-            {/* <FaImdb /> */}
+            <FaImdb />
             <p>{movie.vote_average.toFixed(1)}</p>
           </div>
 
